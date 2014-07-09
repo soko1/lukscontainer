@@ -15,7 +15,7 @@ mapper="cryptfile"
 read key
 case "$key" in
     1 )
-        echo "| Enter path and file name (example: /home/user/cryptfile)\nNB! Enter the full path:"
+        echo "| Enter path and file name (example: /home/user/cryptfile)\n| NB! Enter the full path:"
         read path
         echo "| Enter file size in MB:"
         read size
