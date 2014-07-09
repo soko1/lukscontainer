@@ -3,6 +3,12 @@
 # author: Sakalou Aliaksei <nullbsd@gmail.com>
 # git: https://github.com/soko1/lukscontainer
 
+cryptsetup 2>/dev/null
+if [ $? -gt 1 ]; then
+    echo "Package 'cryptsetup' not found.\nPlease install this package in your system.\nExiting..."
+    exit
+fi
+
 echo ----------------
 echo "1. Create container"
 echo "2. Mount container"
