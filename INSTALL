@@ -1,0 +1,2 @@
+$ chmod +x lukscontainer.sh
+$ ./lukscontainer.sh
