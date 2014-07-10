@@ -10,7 +10,8 @@ VER=0.2
 function check_prog {
     $1 2>/dev/null
     if [ $? -gt 1 ]; then
-         echo "Package '$1' not found. Please install this package in your system. Exiting..."
+         echo "Package '$1' not found. Please install this package in your system." 
+         echo "Exiting..."
          exit 1
     fi
 }
